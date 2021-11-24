@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  background-color: $color-background-primary;
+  font-family: $font-base;
+  color: $color-base;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  width: 1344px;
+  margin: 0 auto;
+}
