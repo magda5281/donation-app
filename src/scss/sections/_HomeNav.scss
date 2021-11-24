@@ -1,0 +1,45 @@
+.homeNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__upper{
+    margin-bottom: 17px;
+  }
+
+  &__upper__log {
+    border: none;
+    background-color: $color-background-primary;
+    color: $color-nav-top;
+    font-family: $font-base;
+    font-size: 1.3rem;
+    padding: 9px 10px;
+
+    &:first-child{
+      margin-right: 10px;
+    }
+
+    &:hover{
+      border: 0.75px solid $color-detail;
+    }
+  }
+
+  &__lower{
+    padding: 9px 0 9px 20px;
+  }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.8rem;
+    }
+
+  li {
+      padding: 0 20px;
+      &:last-child {
+        padding-right: 0;
+      }
+  }
+
+}
