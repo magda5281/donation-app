@@ -1,15 +1,20 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const HomeNav = () => {
     return (
         <section className="homeNav">
             <div className="homeNav__upper">
-                <button className="homeNav__upper__log">
+                <Link to="/login">
+                    <button className="homeNav__upper__log">
                     Zaloguj
-                </button>
-                <button className="homeNav__upper__log">
-                    Zaloz Konto
-                </button>
+                    </button>
+                </Link>
+                <Link to="/register">
+                    <button className="homeNav__upper__log">
+                        Zaloz Konto
+                    </button>
+                </Link>
             </div>
             <div className="homeNav__lower">
                 <ul>

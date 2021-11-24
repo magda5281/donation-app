@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 210px;
 
   &__upper{
     margin-bottom: 17px;
@@ -33,13 +34,22 @@
       display: flex;
       justify-content: space-between;
       font-size: 1.8rem;
+      //padding: 15px;
     }
 
   li {
-      padding: 0 20px;
+      margin: 0 10px;
+    padding: 5px 10px;
+    display: flex;
+      align-items: center;
+    transition: ease-in-out 0.3s;
       &:last-child {
         padding-right: 0;
       }
+    &:hover{
+      border: 1px solid grey;
+
+    }
   }
 
 }
