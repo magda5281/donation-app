@@ -1,0 +1,44 @@
+.homeThreeColumns {
+    background-image: url("../../assets/3 Columns Background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 163px 86px;
+  }
+  &__column {
+    text-align: center;
+    //margin-right: 286px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__number{
+    font-size: 9rem;
+    color: $color-alt;
+    font-weight: 300;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  &__title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: -0.36px;
+    margin-bottom: 28px;
+  }
+  &__text {
+    font-family: $font-alt;
+    font-size: 1.6rem;
+    letter-spacing: -0.32px;
+    font-weight: 300;
+    line-height: 2.1rem;
+    padding: 0 100px;
+
+  }
+
+}
