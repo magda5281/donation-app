@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll'
 
 const HomeNav = () => {
     return (
@@ -18,11 +19,11 @@ const HomeNav = () => {
             </div>
             <div className="homeNav__lower">
                 <ul>
-                    <li className="homeNav__tabs">Start</li>
-                    <li className="homeNav__tabs">O co chodzi?</li>
-                    <li className="homeNav__tabs">O nas</li>
-                    <li className="homeNav__tabs">Fundacja i organizacje</li>
-                    <li className="homeNav__tabs">Kontakt</li>
+                    <li className="homeNav__tabs"><Link  activeClass="active"to="header" spy={true} smooth={true}>Start</Link></li>
+                    <li className="homeNav__tabs"><Link activeClass="active" to="threeColumns" spy={true} smooth={true}>O co chodzi?</Link></li>
+                    <li className="homeNav__tabs"><Link  activeClass="active" to="aboutUs" spy={true} smooth={true}>O nas</Link></li>
+                    <li className="homeNav__tabs"><Link  activeClass="active" to="organizations" spy={true} smooth={true}>Fundacja i organizacje</Link></li>
+                    <li className="homeNav__tabs"><Link  activeClass="active" to="contactUs" spy={true} smooth={true}>Kontakt</Link></li>
                 </ul>
             </div>
         </section>

@@ -3,10 +3,10 @@ import Footer from "./Footer";
 
 const HomeContactUs = () => {
     return (
-        <div>
+        <section className="homeContactUs" id="contactUs">
             HomeContactUs
             <Footer/>
-        </div>
+        </section>
     );
 };
 

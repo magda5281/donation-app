@@ -2,9 +2,9 @@ import React from 'react';
 
 const HomeThreeColumns = () => {
     return (
-        <div>
+        <section className="homeThreeColumns" id="threeColumns">
             Three Columns yellow
-        </div>
+        </section>
     );
 };
 
