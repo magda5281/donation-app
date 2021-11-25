@@ -15,13 +15,10 @@ const HomeAboutUs = () => {
                         Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.
                     </p>
                     <div className="homeAboutUs__signature">
-                        img src={signature} alt={"signature"}
+                        <img src={signature} alt={"signature"}/>
                     </div>
-
-
                 </div>
                 <div className="homeAboutUs__img"/>
-
             </div>
         </section>
     );
