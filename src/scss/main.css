@@ -601,11 +601,13 @@ a {
   justify-content: space-around;
   padding: 46px 163px 86px;
 }
+@media screen and (max-width: 1725px) {
+  .homeThreeColumns__wrapper {
+    padding: 46px 100px 86px;
+  }
+}
 .homeThreeColumns__column {
   text-align: center;
-}
-.homeThreeColumns__column:last-child {
-  margin-right: 0;
 }
 .homeThreeColumns__number {
   font-size: 9rem;
@@ -627,6 +629,11 @@ a {
   font-weight: 300;
   line-height: 2.1rem;
   padding: 0 100px;
+}
+@media screen and (max-width: 1725px) {
+  .homeThreeColumns__text {
+    padding: 0 25px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

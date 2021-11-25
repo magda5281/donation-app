@@ -9,13 +9,13 @@
     display: flex;
     justify-content: space-around;
     padding: 46px 163px 86px;
+    @include desktop {
+      padding: 46px 100px 86px;
+    }
   }
   &__column {
     text-align: center;
-    //margin-right: 286px;
-    &:last-child {
-      margin-right: 0;
-    }
+
   }
 
   &__number{
@@ -38,6 +38,10 @@
     font-weight: 300;
     line-height: 2.1rem;
     padding: 0 100px;
+
+    @include desktop {
+      padding: 0 25px;
+    }
 
   }
 
