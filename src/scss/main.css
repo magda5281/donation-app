@@ -459,6 +459,7 @@ html {
 body {
   background-color: #FFFFFFC9;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #3C3C3C;
   font-size: 1.8rem;
 }
@@ -477,21 +478,108 @@ a {
   background-color: #FFFFFFC9;
   text-align: center;
   border: 0.75px solid #3C3C3C;
+  color: #3C3C3C;
+  padding: 0;
+  cursor: pointer;
 }
-.btn_large {
+.btn--large {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  width: 310px;
+  width: 300px;
   height: 120px;
   font-size: 3.6rem;
 }
-.btn_medium {
+.btn--medium {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 208px;
-  height: 79px;
   font-size: 2.4rem;
+}
+
+.homeHeader {
+  padding-right: 140px;
+}
+.homeHeader__wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 963px;
+}
+.homeHeader__body {
+  padding-left: 66px;
+}
+.homeHeader__content h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  letter-spacing: -0.76px;
+  line-height: 4.5rem;
+}
+.homeHeader__background {
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.homeHeader__decoration {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+.homeHeader__buttons :first-child {
+  margin-right: 44px;
+  margin-bottom: 10px;
+}
+
+.homeNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 210px;
+}
+.homeNav__upper {
+  margin-bottom: 17px;
+}
+.homeNav__upper__log {
+  border: none;
+  background-color: #FFFFFFC9;
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  padding: 9px 10px;
+}
+.homeNav__upper__log:first-child {
+  margin-right: 10px;
+}
+.homeNav__upper__log:hover {
+  border: 0.75px solid #FAD648;
+}
+.homeNav__lower {
+  padding: 9px 0 9px 20px;
+}
+.homeNav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.homeNav li {
+  margin: 0 10px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 0.3s;
+}
+.homeNav li:last-child {
+  padding-right: 0;
+}
+.homeNav li:hover {
+  border: 1px solid grey;
+}
+
+.homeScreen {
+  width: 100vw;
+  padding: 37px 0 22px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
