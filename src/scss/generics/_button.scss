@@ -16,16 +16,8 @@
     width: 300px;
     height: 120px;
     font-size: 3.6rem;
-    &:first-child{
-      margin-right: 44px;
-      margin-bottom: 10px;
-    }
-
     @include desktop {
-      width: 250px;
-      &:first-child {
-        margin-right: 30px;
-      }
+      width: 260px;
     }
 
 

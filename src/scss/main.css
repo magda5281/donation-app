@@ -490,16 +490,9 @@ a {
   height: 120px;
   font-size: 3.6rem;
 }
-.btn--large:first-child {
-  margin-right: 44px;
-  margin-bottom: 10px;
-}
 @media screen and (max-width: 1725px) {
   .btn--large {
-    width: 250px;
-  }
-  .btn--large:first-child {
-    margin-right: 30px;
+    width: 260px;
   }
 }
 .btn--medium {
@@ -520,6 +513,9 @@ a {
 .homeHeader__body {
   padding-left: 66px;
 }
+.homeHeader__content {
+  margin: 0 auto;
+}
 .homeHeader__content h1 {
   font-size: 3.8rem;
   text-align: center;
@@ -536,8 +532,14 @@ a {
 .homeHeader__decoration {
   display: flex;
   justify-content: center;
+  margin-top: 25px;
   margin-bottom: 65px;
 }
+.homeHeader__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .homeNav {
   display: flex;
   flex-direction: column;

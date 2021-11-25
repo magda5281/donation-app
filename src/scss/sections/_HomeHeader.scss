@@ -11,6 +11,7 @@
   }
 
   &__content{
+    margin: 0 auto;
     h1 {
       font-size: 3.8rem;
       text-align: center;
@@ -30,18 +31,14 @@
   &__decoration{
     display: flex;
     justify-content: center;
+    margin-top: 25px;
     margin-bottom: 65px;
   }
- &__buttons{
-   //:first-child{
-   //  margin-right: 44px;
-   //  margin-bottom: 10px;
-   //}
 
-  //@include desktop {
-  //  :first-child {
-  //    margin-right: 30px;
-  //  }
-  //}
-}
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
 }
