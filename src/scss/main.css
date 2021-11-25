@@ -638,4 +638,57 @@ a {
   }
 }
 
+.homeFourSteps {
+  padding-top: 55px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+.homeFourSteps h2 {
+  text-align: center;
+  font-size: 3.8rem;
+  letter-spacing: -0.76px;
+}
+.homeFourSteps__decoration {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+.homeFourSteps__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 400px 60px 400px;
+  background-color: #F0F1F1;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 1725px) {
+  .homeFourSteps__body {
+    padding: 70px 200px 60px 200px;
+  }
+}
+.homeFourSteps__column {
+  text-align: center;
+  padding: 0 50px;
+  border: none;
+}
+@media screen and (max-width: 1725px) {
+  .homeFourSteps__column {
+    padding: 0 30px;
+  }
+}
+.homeFourSteps h4 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+.homeFourSteps hr {
+  width: 50%;
+}
+.homeFourSteps p {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.homeFourSteps__center {
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=main.css.map */

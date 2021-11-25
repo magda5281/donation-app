@@ -1,0 +1,54 @@
+.homeFourSteps {
+  padding-top: 55px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    font-size: 3.8rem;
+    letter-spacing: -0.76px;
+  }
+  &__decoration {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 400px 60px 400px;
+    background-color: $color-background-secondary;
+    margin-bottom: 35px;
+    @include desktop {
+      padding: 70px 200px 60px 200px;
+    }
+  }
+
+  &__column {
+    text-align: center;
+    padding: 0 50px;
+    border:none;
+    @include desktop {
+      padding: 0 30px;
+    }
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  hr {
+    width: 50%;
+  }
+
+  p{
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+&__center {
+  display: flex;
+  justify-content: center;
+}
+
+}
