@@ -33,10 +33,15 @@
     margin-bottom: 65px;
   }
  &__buttons{
-   :first-child{
-     margin-right: 44px;
-     margin-bottom: 10px;
-   }
- }
+   //:first-child{
+   //  margin-right: 44px;
+   //  margin-bottom: 10px;
+   //}
 
+  //@include desktop {
+  //  :first-child {
+  //    margin-right: 30px;
+  //  }
+  //}
+}
 }

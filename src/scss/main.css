@@ -490,6 +490,18 @@ a {
   height: 120px;
   font-size: 3.6rem;
 }
+.btn--large:first-child {
+  margin-right: 44px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1725px) {
+  .btn--large {
+    width: 250px;
+  }
+  .btn--large:first-child {
+    margin-right: 30px;
+  }
+}
 .btn--medium {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -526,11 +538,6 @@ a {
   justify-content: center;
   margin-bottom: 65px;
 }
-.homeHeader__buttons :first-child {
-  margin-right: 44px;
-  margin-bottom: 10px;
-}
-
 .homeNav {
   display: flex;
   flex-direction: column;
@@ -580,6 +587,46 @@ a {
 .homeScreen {
   width: 100vw;
   padding: 37px 0 22px 0;
+}
+
+.homeThreeColumns {
+  background-image: url("../../assets/3 Columns Background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.homeThreeColumns__wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 46px 163px 86px;
+}
+.homeThreeColumns__column {
+  text-align: center;
+}
+.homeThreeColumns__column:last-child {
+  margin-right: 0;
+}
+.homeThreeColumns__number {
+  font-size: 9rem;
+  color: #5E5322;
+  font-weight: 300;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.homeThreeColumns__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+  margin-bottom: 28px;
+}
+.homeThreeColumns__text {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.32px;
+  font-weight: 300;
+  line-height: 2.1rem;
+  padding: 0 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

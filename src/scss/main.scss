@@ -4,9 +4,11 @@
 @import "settings/fonts";
 @import "settings/colors";
 @import "settings/base";
+@import "settings/mixins";
 
 @import "generics/button";
 
 @import "sections/HomeHeader";
 @import "sections/HomeNav";
 @import "sections/HomeScreen";
+@import "sections/HomeThreeColumns";
