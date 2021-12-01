@@ -523,7 +523,7 @@ a {
   line-height: 4.5rem;
 }
 .homeHeader__background {
-  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-image: url("../../../assets/Home-Hero-Image.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -592,7 +592,7 @@ a {
 }
 
 .homeThreeColumns {
-  background-image: url("../../assets/3 Columns Background.png");
+  background-image: url("../../../assets/3 Columns Background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -721,7 +721,7 @@ a {
   justify-content: flex-end;
 }
 .homeAboutUs__img {
-  background-image: url("../../assets/People.jpg");
+  background-image: url("../../../assets/People.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

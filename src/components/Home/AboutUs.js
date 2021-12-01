@@ -1,8 +1,8 @@
 import React from 'react';
-import decoration from "../assets/Decoration.svg";
-import signature from "../assets/Signature.svg";
+import decoration from "../../assets/Decoration.svg";
+import signature from "../../assets/Signature.svg";
 
-const HomeAboutUs = () => {
+const AboutUs = () => {
     return (
         <section className="homeAboutUs" id="aboutUs">
             <div className="homeAboutUs__wrapper">
@@ -24,4 +24,4 @@ const HomeAboutUs = () => {
     );
 };
 
-export default HomeAboutUs;
+export default AboutUs;

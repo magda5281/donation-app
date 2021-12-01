@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomeThreeColumns = () => {
+const ThreeColumns = () => {
     return (
         <section className="homeThreeColumns" id="threeColumns">
             <div className="homeThreeColumns__wrapper">
@@ -25,4 +25,4 @@ const HomeThreeColumns = () => {
     );
 };
 
-export default HomeThreeColumns;
+export default ThreeColumns;

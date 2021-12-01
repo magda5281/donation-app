@@ -1,14 +1,13 @@
 import React from 'react';
-import decoration from "../assets/Decoration.svg";
-import tShirt from "../assets/Icon-1.svg";
-import bag from "../assets/Icon-2.svg";
-import magnifyingGlass from "../assets/Icon-3.svg";
-import circleArrows from "../assets/Icon-4.svg";
-
+import decoration from "../../assets/Decoration.svg";
+import tShirt from "../../assets/Icon-1.svg";
+import bag from "../../assets/Icon-2.svg";
+import magnifyingGlass from "../../assets/Icon-3.svg";
+import circleArrows from "../../assets/Icon-4.svg";
 
 import {Link} from "react-router-dom";
 
-const HomeFourSteps = () => {
+const FourSteps = () => {
     return (
         <section className="homeFourSteps" id ="fourSteps">
             <h2>Wystarczą 4 proste kroki</h2>
@@ -49,4 +48,4 @@ const HomeFourSteps = () => {
     );
 };
 
-export default HomeFourSteps;
+export default FourSteps;

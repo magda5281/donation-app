@@ -1,17 +1,17 @@
 import React from 'react';
-import HomeNav from "./HomeNav";
-import decoration from '../assets/Decoration.svg';
+import Nav from "./Nav";
+import decoration from '../../assets/Decoration.svg';
 import {Link} from 'react-router-dom';
 
 
-const HomeHeader = () => {
+const Header = () => {
     return (
         <section className="homeHeader" id="header">
             <div className="homeHeader__wrapper">
                 <div className="homeHeader__background"/>
 
                 <div className="homeHeader__body">
-                    <HomeNav/>
+                    <Nav/>
                     <div className="homeHeader__content">
                         <h1>
                             Zacznij pomagac!<br/>
@@ -36,4 +36,4 @@ const HomeHeader = () => {
 );
 };
 
-export default HomeHeader;
+export default Header;

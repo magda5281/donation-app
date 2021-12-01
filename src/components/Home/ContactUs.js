@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from "./Footer";
+import Footer from "../Footer";
 
-const HomeContactUs = () => {
+const ContactUs = () => {
     return (
         <section className="homeContactUs" id="contactUs">
             HomeContactUs
@@ -10,4 +10,4 @@ const HomeContactUs = () => {
     );
 };
 
-export default HomeContactUs;
+export default ContactUs;
