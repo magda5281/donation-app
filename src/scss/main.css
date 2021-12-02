@@ -728,4 +728,72 @@ a {
   width: 50%;
 }
 
+.homeOrganizations {
+  padding: 70px 278px 80px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1725px) {
+  .homeOrganizations {
+    padding: 70px 100px 80px;
+  }
+}
+.homeOrganizations h2 {
+  text-align: center;
+  font-size: 3.8rem;
+  letter-spacing: -0.76px;
+  margin-bottom: 25px;
+}
+.homeOrganizations__tabList {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 50px 320px 70px 270px;
+}
+@media screen and (max-width: 1725px) {
+  .homeOrganizations__tabList {
+    padding: 50px 170px 70px 170px;
+  }
+}
+.homeOrganizations__tab {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 23px 42px;
+}
+.homeOrganizations__tab:hover {
+  border: 0.75px solid #3C3C3C;
+}
+.homeOrganizations__text {
+  margin-bottom: 66px;
+  padding: 0 352px;
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 3.1rem;
+}
+@media screen and (max-width: 1725px) {
+  .homeOrganizations__text {
+    padding: 0 220px;
+  }
+}
+.homeOrganizations .tabPanel__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 34px;
+}
+.homeOrganizations .tabPanel__wrapper h3 {
+  font-size: 2.6rem;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  line-height: 3.2rem;
+}
+.homeOrganizations .tabPanel__wrapper p {
+  font-size: 1.8rem;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  text-wrap: none;
+  line-height: 3rem;
+}
+
 /*# sourceMappingURL=main.css.map */

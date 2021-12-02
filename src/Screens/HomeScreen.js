@@ -6,17 +6,16 @@ import AboutUs from "../components/Home/AboutUs";
 import Organizations from "../components/Home/Organizations";
 import ContactUs from "../components/Home/ContactUs";
 
+
 const HomeScreen = () => {
     return (
         <div className= "homeScreen" >
-
             <Header/>
             <ThreeColumns/>
             <FourSteps/>
             <AboutUs/>
             <Organizations/>
             <ContactUs/>
-
         </div>
     );
 };
