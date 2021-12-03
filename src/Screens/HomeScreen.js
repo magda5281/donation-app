@@ -3,7 +3,7 @@ import Header from "../components/Home/Header";
 import ThreeColumns from "../components/Home/ThreeColumns";
 import FourSteps from "../components/Home/FourSteps";
 import AboutUs from "../components/Home/AboutUs";
-import Organizations from "../components/Home/Organizations";
+import WhoWeHelp from "../components/Home/WhoWeHelp";
 import ContactUs from "../components/Home/ContactUs";
 
 
@@ -14,7 +14,7 @@ const HomeScreen = () => {
             <ThreeColumns/>
             <FourSteps/>
             <AboutUs/>
-            <Organizations/>
+            <WhoWeHelp/>
             <ContactUs/>
         </div>
     );

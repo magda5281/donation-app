@@ -1,5 +1,5 @@
 
-.homeOrganizations {
+.whoWeHelp {
   padding: 70px 278px 80px;
   margin: 0 auto;
   @include desktop {
@@ -27,10 +27,14 @@
     line-height: 3rem;
     text-align: center;
     padding: 23px 42px;
-    &:hover {
+    cursor: pointer;
+
+    &:hover{
       border:  0.75px solid $color-base;
     }
+
   }
+
 
   &__text {
     margin-bottom: 66px;
@@ -43,27 +47,5 @@
 
     }
   }
-  .tabPanel__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
-    margin-top: 34px;
 
-    h3 {
-      font-size: 2.6rem;
-      font-family: $font-alt;
-      font-weight: 300;
-      line-height: 3.2rem;
-    }
-    p {
-      font-size: 1.8rem;
-      font-family: $font-alt;
-      font-weight: 300;
-      text-wrap: none;
-      line-height: 3rem;
-
-    }
-
-  }
 }

@@ -1,0 +1,17 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  &__previous,
+  &__next {
+    display: none;
+  }
+  &__page {
+    padding: 15px 13px;
+    margin-right: 20px;
+
+  }
+
+  &__link--active{
+    border: 1px solid $color-underlines;
+  }
+}
