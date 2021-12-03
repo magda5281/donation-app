@@ -501,6 +501,14 @@ a {
   width: 208px;
   font-size: 2.4rem;
 }
+.btn--small {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 13px 52px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: black;
+}
 
 .homeHeader {
   padding-right: 140px;
@@ -783,6 +791,10 @@ a {
   align-items: center;
   padding-bottom: 30px;
   margin-top: 34px;
+  border-bottom: 1px solid #707070;
+}
+.items:nth-child(4) {
+  border-bottom: none;
 }
 .items h3 {
   font-size: 2.6rem;
@@ -811,6 +823,98 @@ a {
 }
 .pagination__link--active {
   border: 1px solid #707070;
+}
+
+.homeContactUs {
+  position: relative;
+}
+.homeContactUs__wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 1026px;
+  width: 100%;
+}
+.homeContactUs__background {
+  background: url("../../../assets/Background-Contact-Form.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  position: relative;
+}
+.homeContactUs__background:before {
+  background: rgba(255, 255, 255, 0.79);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.homeContactUs__body {
+  text-align: center;
+  margin: 200px 142px 0 0;
+}
+.homeContactUs h2 {
+  letter-spacing: -0.76px;
+  font-size: 3.8rem;
+  text-align: center;
+}
+.homeContactUs .form__info {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.homeContactUs .form__control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.homeContactUs .form__control:first-child {
+  margin-right: 16px;
+}
+.homeContactUs .form__control label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  margin-bottom: 12px;
+}
+.homeContactUs .form__control input,
+.homeContactUs .form__control textarea {
+  outline: none;
+  padding: 0 15px 4px;
+  border: none;
+  border-bottom: 2px solid #3C3C3C26;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+  resize: none;
+  color: #3C3C3C;
+}
+.homeContactUs .form__control ::placeholder {
+  color: #3C3C3C26;
+  font-family: "Open Sans", sans-serif;
+}
+.homeContactUs .form__submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 22px;
+}
+.footer small {
+  flex-grow: 3;
+  text-align: center;
+}
+.footer__icons {
+  padding-right: 140px;
+}
+.footer__icons img:first-child {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

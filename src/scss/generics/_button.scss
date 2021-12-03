@@ -8,7 +8,6 @@
   padding: 0;
   cursor: pointer;
 
-
   &--large {
     font-family: $font-base;
     text-transform: uppercase;
@@ -19,8 +18,6 @@
     @include desktop {
       width: 260px;
     }
-
-
   }
 
   &--medium {
@@ -28,6 +25,15 @@
     font-weight: 400;
     width: 208px;
     font-size: 2.4rem;
+  }
+
+  &--small {
+    font-family: $font-base;
+    font-weight: 300;
+    padding: 13px 52px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: black;
   }
 
 }

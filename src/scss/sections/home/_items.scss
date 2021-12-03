@@ -4,6 +4,11 @@
   align-items: center;
   padding-bottom: 30px;
   margin-top: 34px;
+  border-bottom: 1px solid $color-underlines;
+
+  &:nth-child(4) {
+    border-bottom: none;
+  }
 
   h3 {
     font-size: 2.6rem;
