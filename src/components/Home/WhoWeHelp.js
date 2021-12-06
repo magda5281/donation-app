@@ -1,5 +1,4 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import decoration from "../../assets/Decoration.svg";
 import React from "react";
 import PaginatedItems from "./PaginatedItems";
 import organizationsList from "../../data/organizationsList";

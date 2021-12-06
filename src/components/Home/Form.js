@@ -113,6 +113,7 @@ const Form = () => {
                         value={name}
                         onChange={validateName}
                         required
+                        className= {nameError && "form__errorBorder"}
                     />
                     {nameError && <span className="form__error" id="nameError">Name must be one word </span>}
                 </div>

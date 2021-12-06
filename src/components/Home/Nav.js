@@ -19,7 +19,8 @@ const Nav = () => {
             </div>
             <div className="homeNav__lower">
                 <ul>
-                    <li className="homeNav__tabs"><Scroller  activeClass="active"to="header" spy={true} smooth={true}>Start</Scroller></li>
+                        <li className="homeNav__tabs"><Scroller  activeClass="active"to="header" spy={true} smooth={true}>Start</Scroller></li>
+
                     <li className="homeNav__tabs"><Scroller activeClass="active" to="fourSteps" spy={true} smooth={true}>O co chodzi?</Scroller></li>
                     <li className="homeNav__tabs"><Scroller  activeClass="active" to="aboutUs" spy={true} smooth={true}>O nas</Scroller></li>
                     <li className="homeNav__tabs"><Scroller  activeClass="active" to="organizations" spy={true} smooth={true}>Fundacja i organizacje</Scroller></li>

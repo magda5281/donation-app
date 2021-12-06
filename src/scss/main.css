@@ -895,6 +895,9 @@ a {
   color: #3C3C3C26;
   font-family: "Open Sans", sans-serif;
 }
+.form__control__errorBorder {
+  border-bottom: 2px solid red;
+}
 .form__submit {
   display: flex;
   justify-content: flex-end;

@@ -1,5 +1,4 @@
 import React from 'react';
-import decoration from "../../assets/Decoration.svg";
 import tShirt from "../../assets/Icon-1.svg";
 import bag from "../../assets/Icon-2.svg";
 import magnifyingGlass from "../../assets/Icon-3.svg";

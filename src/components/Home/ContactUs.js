@@ -1,8 +1,6 @@
 import React from 'react';
 import Footer from "../Footer";
 
-
-import decoration from "../../assets/Decoration.svg";
 import Form from "./Form";
 import Decoration from "../Decoration";
 
