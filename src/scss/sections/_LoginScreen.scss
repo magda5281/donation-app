@@ -1,0 +1,43 @@
+.login{
+  width: 100vw;
+  padding: 37px 139px 215px 0;
+  margin: 0 auto;
+  &__body{
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      font-size: 4rem;
+      letter-spacing: -0.8px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    width:350px;
+    background-color: $color-background-secondary;
+    padding:40px 67px;
+  }
+
+  .form {
+    margin: 0 auto;
+
+    &__control:first-child{
+      margin-right: 0;
+    }
+
+    &__control{
+
+      input {
+        background-color: $color-background-secondary;
+      }
+    }
+
+  }
+ &__buttons{
+   margin: 40px auto 0;
+   text-align: center;
+   font-size: 1.8rem;
+   font-weight: 300;
+ }
+
+}

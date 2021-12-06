@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav from "./Nav";
-// import decoration from '../../assets/Decoration.svg';
 import {Link} from 'react-router-dom';
 import Decoration from "../Decoration";
 

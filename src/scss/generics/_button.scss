@@ -35,5 +35,17 @@
     line-height: 2.4rem;
     color: black;
   }
+  &--login{
+    border: none;
+    padding:13px 15px ;
+    color: black;
+    &:first-child{
+      margin-right: 300px;
+    }
+
+    &:hover{
+      border: 0.75px solid $color-base;
+    }
+  }
 
 }
