@@ -6,14 +6,13 @@ import magnifyingGlass from "../../assets/Icon-3.svg";
 import circleArrows from "../../assets/Icon-4.svg";
 
 import {Link} from "react-router-dom";
+import Decoration from "../Decoration";
 
 const FourSteps = () => {
     return (
         <section className="homeFourSteps" id ="fourSteps">
             <h2>Wystarczą 4 proste kroki</h2>
-            <div className="homeFourSteps__decoration">
-                <img src={decoration} alt={"decoration"}/>
-            </div>
+            <Decoration marginTop="25px" marginBottom="25px"/>
             <div className="homeFourSteps__body">
                 <div className="homeFourSteps__column">
                     <img src={tShirt} alt={"t-shirt icon"}/>

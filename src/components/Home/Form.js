@@ -98,9 +98,9 @@ const Form = () => {
             onSubmit={handleSubmit}
             >
             {isSubmitted && <div className="form__submitted">Wiadomosc zostala wyslana!<br/>Wkrotce sie skontaktujemy.</div>}
-            {apiErrorMsg.length>0 && apiErrorMsg.map((err,index)=>{
-               console.log(err.msg)}
-            )}
+            {/*{apiErrorMsg.length>0 && apiErrorMsg.map((err,index)=>{*/}
+            {/*   console.log(err.msg)}*/}
+            {/*)}*/}
             <div className="form__info">
                 <div className="form__control">
                     <label htmlFor="name">Wpisz swoje imie</label>

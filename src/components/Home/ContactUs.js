@@ -4,6 +4,7 @@ import Footer from "../Footer";
 
 import decoration from "../../assets/Decoration.svg";
 import Form from "./Form";
+import Decoration from "../Decoration";
 
 const ContactUs = () => {
 
@@ -18,9 +19,7 @@ const ContactUs = () => {
                         <h2>
                             Skontaktuj sie z nami
                         </h2>
-                        <div className="homeContactUs__decoration">
-                            <img src={decoration} alt={"decoration"}/>
-                        </div>
+                        <Decoration marginTop="25px" marginBottom="30px"/>
                         <Form/>
                     </div>
                 </div>

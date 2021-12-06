@@ -5,15 +5,14 @@ import PaginatedItems from "./PaginatedItems";
 import organizationsList from "../../data/organizationsList";
 import fundationsList from "../../data/fundationsList";
 import localList from "../../data/local";
+import Decoration from "../Decoration";
 
 const WhoWeHelp = () => {
 
     return (
         <section className="whoWeHelp" id="organizations">
             <h2>Komu pomagamy?</h2>
-            <div className="homeFourSteps__decoration">
-                <img src={decoration} alt={"decoration"}/>
-            </div>
+            <Decoration marginTop="25px" marginBottom="25px"/>
             <Tabs>
                 <TabList className="whoWeHelp__tabList">
                     <Tab className="whoWeHelp__tab" >Fundacjom</Tab>

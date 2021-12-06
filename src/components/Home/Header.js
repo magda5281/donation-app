@@ -1,7 +1,8 @@
 import React from 'react';
 import Nav from "./Nav";
-import decoration from '../../assets/Decoration.svg';
+// import decoration from '../../assets/Decoration.svg';
 import {Link} from 'react-router-dom';
+import Decoration from "../Decoration";
 
 
 const Header = () => {
@@ -17,9 +18,7 @@ const Header = () => {
                             Zacznij pomagac!<br/>
                             Oddaj niechciane rzeczy w zaufane rece
                         </h1>
-                        <div className="homeHeader__decoration">
-                            <img src={decoration} alt={"decoration"}/>
-                        </div>
+                        <Decoration marginTop="25px" marginBottom="65px"/>
                         <div className="homeHeader__buttons">
                             <Link to="/login">
                                 <button className="btn btn--large">ODDAJ <br/>RZECZY</button>
