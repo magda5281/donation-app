@@ -1,0 +1,71 @@
+.form {
+
+  &__info {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  &__control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+
+
+    label{
+      font-size:1.6rem;
+      font-weight: 600;
+      line-height: 2.2rem;
+      margin-bottom: 12px;
+    }
+    input,
+    textarea {
+      outline: none;
+      padding: 0 15px 4px;
+      border: none;
+      border-bottom: 2px solid #3C3C3C26;
+
+      width: 100%;
+      overflow: hidden;
+      resize: none;
+      color: $color-base;
+    }
+    & ::placeholder {
+      color: $color-font-input;
+      font-family: $font-base;
+    }
+
+    span {
+
+    }
+  }
+  &__submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__error{
+    font-size: 1.4rem;
+    color: red;
+    text-align: left;
+    padding-top: 5px;
+    &--api{
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+  &__submitted{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #13bb13;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+  }
+}
