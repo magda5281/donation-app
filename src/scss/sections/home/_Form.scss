@@ -39,10 +39,8 @@
       font-family: $font-base;
     }
 
-    &__errorBorder {
-      border-bottom: 2px solid red;
-    }
   }
+
   &__submit {
     display: flex;
     justify-content: flex-end;
@@ -53,10 +51,6 @@
     color: red;
     text-align: left;
     padding-top: 5px;
-    &--api{
-      margin-bottom: 50px;
-      text-align: center;
-    }
   }
   &__submitted{
     margin-bottom: 50px;

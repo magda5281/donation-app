@@ -13,13 +13,13 @@ const ContactUs = () => {
 
                 <div className="homeContactUs__background"/>
                 <div className="homeContactUs__body">
-                    <div className="homeContactUs__content">
+                    {/*<div className="homeContactUs__content">*/}
                         <h2>
                             Skontaktuj sie z nami
                         </h2>
                         <Decoration marginTop="25px" marginBottom="30px"/>
                         <Form/>
-                    </div>
+                    {/*</div>*/}
                 </div>
 
             </div>

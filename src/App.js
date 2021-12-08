@@ -14,6 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path={"/"} element={<HomeScreen/>}/>
+
           <Route exact path={"/register"} element={<RegisterScreen/>}/>
           <Route exact path ={"/login"} element={<LoginScreen/>}/>
         </Routes>
