@@ -12,21 +12,21 @@ const WhoWeHelp = () => {
         <section className="whoWeHelp" id="organizations">
             <h2>Komu pomagamy?</h2>
             <Decoration marginTop="25px" marginBottom="25px"/>
-            <Tabs>
+            <Tabs style={{minHeight: 1025}}>
                 <TabList className="whoWeHelp__tabList">
                     <Tab className="whoWeHelp__tab" >Fundacjom</Tab>
                     <Tab className="whoWeHelp__tab">Organizacjom <br/>pozarzadowym</Tab>
                     <Tab className="whoWeHelp__tab">Lokalnym<br/>zbiorkom</Tab>
                 </TabList>
 
-                <TabPanel className="tabPanel">
+                <TabPanel className="whoWeHelp__tabPanel" >
                     <p className="whoWeHelp__text">
                         W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
                     </p>
                     <PaginatedItems itemsPerPage={3} items={fundationsList}/>
                 </TabPanel>
 
-                <TabPanel className="tabPanel">
+                <TabPanel className="whoWeHelp__tabPanel">
                         <p className="whoWeHelp__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aspernatur, aut dicta ducimus eum, fugiat in placeat quod temporibus velit voluptas voluptatum?
                         </p>
@@ -34,7 +34,7 @@ const WhoWeHelp = () => {
 
                 </TabPanel>
 
-                <TabPanel className="tabPanel">
+                <TabPanel className="whoWeHelp__tabPanel">
                         <p className="whoWeHelp__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aspernatur, aut dicta ducimus eum, fugiat in placeat quod temporibus velit voluptas voluptatum?
                         </p>

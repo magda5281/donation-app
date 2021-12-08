@@ -4,7 +4,9 @@
   align-items: center;
   padding-bottom: 30px;
   margin-top: 34px;
+  min-height: 94px;
   border-bottom: 1px solid $color-underlines;
+  transition: min-height 0.66s;
 
   &:nth-child(4) {
     border-bottom: none;

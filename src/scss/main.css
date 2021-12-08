@@ -763,11 +763,15 @@ a {
   }
 }
 .whoWeHelp__tab {
+  display: flex;
   font-size: 2.4rem;
   line-height: 3rem;
   text-align: center;
   padding: 23px 42px;
   cursor: pointer;
+  height: 106px;
+  align-items: center;
+  justify-content: center;
 }
 .whoWeHelp__tab:hover {
   border: 0.75px solid #3C3C3C;
@@ -784,6 +788,9 @@ a {
     padding: 0 220px;
   }
 }
+.whoWeHelp__tabPanel {
+  transition: 0.66s ease-out;
+}
 
 .items {
   display: flex;
@@ -791,7 +798,9 @@ a {
   align-items: center;
   padding-bottom: 30px;
   margin-top: 34px;
+  min-height: 94px;
   border-bottom: 1px solid #707070;
+  transition: min-height 0.66s;
 }
 .items:nth-child(4) {
   border-bottom: none;
@@ -852,7 +861,7 @@ a {
 }
 .homeContactUs__body {
   text-align: center;
-  margin: 200px 142px 0 0;
+  margin: 200px 0;
 }
 .homeContactUs h2 {
   letter-spacing: -0.76px;
@@ -907,10 +916,6 @@ a {
   color: red;
   text-align: left;
   padding-top: 5px;
-}
-.form__error--api {
-  margin-bottom: 50px;
-  text-align: center;
 }
 .form__submitted {
   margin-bottom: 50px;
