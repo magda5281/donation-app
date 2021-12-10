@@ -975,6 +975,8 @@ a {
 }
 .login .form__control input {
   background-color: #F0F1F1;
+  text-align: left;
+  padding-left: 0;
 }
 .login__buttons {
   margin: 40px auto 0;

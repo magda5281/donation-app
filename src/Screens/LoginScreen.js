@@ -6,17 +6,17 @@ import {useState} from "react";
 
 const LoginScreen = () => {
 
-    const [user, setUser] =useState({email:"", password:""});
-    const [emailError, setEmailError]=useState(false);
-    const [passwordError, setPasswordError] =useState(false);
+    const [user, setUser] = useState({email: "", password: ""});
+    const [emailError, setEmailError] = useState(false);
+    const [passwordError, setPasswordError] = useState(false);
     const [valid, setIsValid] = useState(false);
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault(e);
         const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-        if (!regex.test(user.email) || (!user.email) ){
+        if (!regex.test(user.email) || (!user.email)) {
             setEmailError(true);
-            setUser({...user, email:""})
+            setUser({...user, email: ""})
             console.log("invalid email")
             return false
         } else {
@@ -24,7 +24,7 @@ const LoginScreen = () => {
         }
         if (user.password.length < 6 || (!user.password)) {
             setPasswordError(true);
-            setUser({...user, [e.target.name]:""})
+            setUser({...user, [e.target.name]: ""})
             console.log("invalid password")
             return false
         } else {
@@ -35,9 +35,7 @@ const LoginScreen = () => {
             // submitData(user);
             // setUser({email:"", password:""})
         }
-
     }
-
     return (
         <section className="login">
             <Nav/>
@@ -53,7 +51,7 @@ const LoginScreen = () => {
                                 type="text"
                                 value={user.email}
                                 name="email"
-                                onChange={e=>setUser({...user, [e.target.name]:e.target.value})}
+                                onChange={e => setUser({...user, [e.target.name]: e.target.value})}
                                 style={{borderBottom: emailError && "2px solid red"}}/>
                             {(emailError) && (<div className="error">Podany email jest nieprawidlowy</div>)}
                         </div>
@@ -62,7 +60,7 @@ const LoginScreen = () => {
                             <input type="password"
                                    name="password"
                                    value={user.password}
-                                   onChange={e=>setUser({...user, [e.target.name]:e.target.value})}
+                                   onChange={e => setUser({...user, [e.target.name]: e.target.value})}
                                    style={{borderBottom: passwordError && "2px solid red"}}/>
                             {(passwordError) && (<div className="error">Podane haslo jest za krotkie</div>)}
                         </div>
@@ -71,13 +69,12 @@ const LoginScreen = () => {
                         <Link to="/register">
                             <button className="btn btn--login  ">Zaloz konto</button>
                         </Link>
-                        <button className="btn btn--login   ">Zaloguj sie</button>
-
-                </div>
+                        <button className="btn btn--login  ">Zaloguj sie</button>
+                    </div>
                 </form>
             </div>
         </section>
-);
+    );
 };
 
 export default LoginScreen;
