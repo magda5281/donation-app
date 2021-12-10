@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+
+
 const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -15,7 +17,7 @@ const Form = () => {
         validateEmail(email)
         validateMessage(message)
         if (nameError || emailError || messageError) {
-            return
+            return false;
         } else {
             const messageInfo = {
                 name,
@@ -37,9 +39,10 @@ const Form = () => {
                         setName("");
                         setEmail("");
                         setMessage("");
-                        // setNameError(false);
-                        // setEmailError(false);
-                        // setMessageError(false);
+                        setTimeout(()=>{
+                            setIsSubmitted(false);
+                        },5000);
+
                     } else {
                         setIsSubmitted(false);
                             console.log(data.status);
@@ -58,7 +61,7 @@ const Form = () => {
         }
     }
     const validateEmail = (email)=>{
-        const regex = /^\S+@\S+\.\S+$/
+        const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
         if (!regex.test(email) ){
             setEmailError(true);
             setEmail("");
@@ -97,7 +100,7 @@ const Form = () => {
                         required
                         style={{borderBottom: nameError && "2px solid red"}}
                     />
-                    {nameError && <span className="form__error">Name needs to be one word and letters only</span>}
+                    {nameError && <span className="error">Name needs to be one word and letters only</span>}
                 </div>
 
                 <div className="form__control">
@@ -113,7 +116,7 @@ const Form = () => {
                         required
                         style={{borderBottom: emailError && "2px solid red"}}
                     />
-                    {emailError && <span className="form__error">Provide valid email address</span>}
+                    {emailError && <span className="error">Provide valid email address</span>}
                 </div>
             </div>
             <div className="form__control">
@@ -126,7 +129,7 @@ const Form = () => {
                           required
                           style={{borderBottom: messageError && "2px solid red"}}
                 />
-                {messageError && <span className="form__error">Message must be min 120 characters</span>}
+                {messageError && <span className="error">Message must be min 120 characters</span>}
 
             </div>
             <div className="form__submit">
