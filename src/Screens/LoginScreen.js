@@ -9,31 +9,30 @@ const LoginScreen = () => {
     const [user, setUser] = useState({email: "", password: ""});
     const [emailError, setEmailError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
-    const [valid, setIsValid] = useState(false);
+    // const [valid, setIsValid] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault(e);
-        const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-        if (!regex.test(user.email) || (!user.email)) {
+        const regex = /^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+        if (!regex.test(user.email) || (user.email==="")) {
             setEmailError(true);
-            setUser({...user, email: ""})
+            setUser({...user, "email": ""})
             console.log("invalid email")
             return false
         } else {
             setEmailError(false);
         }
-        if (user.password.length < 6 || (!user.password)) {
+        if (user.password.length < 6 || (user.password==="")) {
             setPasswordError(true);
-            setUser({...user, [e.target.name]: ""})
+            setUser({...user, "password":""})
             console.log("invalid password")
             return false
         } else {
-            setIsValid(true);
+            // setIsValid(true);
             setEmailError(false);
             setPasswordError(false);
             console.log("submitted")
             // submitData(user);
-            // setUser({email:"", password:""})
         }
     }
     return (
