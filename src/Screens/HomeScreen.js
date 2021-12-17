@@ -6,11 +6,10 @@ import AboutUs from "../components/Home/AboutUs";
 import WhoWeHelp from "../components/Home/WhoWeHelp";
 import ContactUs from "../components/Home/ContactUs";
 
-
-const HomeScreen = () => {
+const HomeScreen = ({loggedIn}) => {
     return (
         <div className= "homeScreen" >
-            <Header/>
+            <Header loggedIn={loggedIn}/>
             <ThreeColumns/>
             <FourSteps/>
             <AboutUs/>

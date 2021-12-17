@@ -34,7 +34,6 @@
       display: flex;
       justify-content: space-between;
       font-size: 1.8rem;
-      //padding: 15px;
     }
 
   li {
@@ -50,6 +49,10 @@
       border: 1px solid grey;
 
     }
+  }
+  span {
+    font-size: 1.4rem;
+    padding:27px ;
   }
 
 }

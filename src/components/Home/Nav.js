@@ -1,10 +1,27 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {Link as Scroller}  from 'react-scroll'
+import {auth} from "../../firebase";
 
-const Nav = () => {
+const Nav = ({loggedIn}) => {
+    console.log(loggedIn);
+
     return (
         <section className="homeNav">
+
+            {loggedIn ? <div className="homeNav__upper">
+                <span>Czesc {loggedIn}</span>
+                <Link to="/oddajRzeczy">
+                    <button className="homeNav__upper__log">
+                        Oddaj rzeczy
+                    </button>
+                </Link>
+                <Link to="/loggedOut">
+                    <button onClick={()=>auth.signOut()} className="homeNav__upper__log">
+                        Wyloguj
+                    </button>
+                </Link>
+            </div> :
             <div className="homeNav__upper">
                 <Link to="/login">
                     <button className="homeNav__upper__log">
@@ -17,6 +34,7 @@ const Nav = () => {
                     </button>
                 </Link>
             </div>
+            }
             <div className="homeNav__lower">
                 <ul>
                     <Link to={"/"}>

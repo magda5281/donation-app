@@ -3,13 +3,17 @@ import Nav from "../components/Home/Nav";
 import Decoration from "../components/Decoration";
 import {Link} from 'react-router-dom';
 import {useState} from "react";
+import {auth} from "../firebase";
+import {useNavigate} from "react-router-dom";
+
 
 const LoginScreen = () => {
 
     const [user, setUser] = useState({email: "", password: ""});
     const [emailError, setEmailError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
-    // const [valid, setIsValid] = useState(false);
+    const [authError, setAuthError] = useState(false);
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault(e);
@@ -28,16 +32,27 @@ const LoginScreen = () => {
             console.log("invalid password")
             return false
         } else {
-            // setIsValid(true);
             setEmailError(false);
             setPasswordError(false);
-            console.log("submitted")
-            // submitData(user);
+            console.log("submitted");
+            auth.signInWithEmailAndPassword(
+                user.email,
+                user.password
+            )
+                .then((authUser)=>{
+                    console.log(authUser.user.uid);
+                    navigate("/", { replace: true });
+                })
+                .catch((error)=>{
+                    console.log(error.message);
+                    setAuthError(true);
+                })
         }
     }
     return (
         <section className="login">
-            <Nav/>
+
+            <Nav />
             <div className="login__body">
                 <h2>Zaloguj sie</h2>
                 <Decoration marginTop="25px" marginBottom="60px"/>
@@ -64,6 +79,7 @@ const LoginScreen = () => {
                             {(passwordError) && (<div className="error">Podane haslo jest za krotkie</div>)}
                         </div>
                     </div>
+                    {authError && <h3 className="error" style={{textAlign: "center", margin: "auto"}}> There is no user record corresponding to this identifier. </h3>}
                     <div className="login__buttons">
                         <Link to="/register">
                             <button className="btn btn--login  ">Zaloz konto</button>

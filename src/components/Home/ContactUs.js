@@ -5,8 +5,6 @@ import Form from "./Form";
 import Decoration from "../Decoration";
 
 const ContactUs = () => {
-
-
     return (
         <section className="homeContactUs" id="contactUs">
             <div className="homeContactUs__wrapper">

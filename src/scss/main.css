@@ -508,8 +508,13 @@ a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: black;
+  transition: ease-in-out 0.3s;
+}
+.btn--small:hover {
+  box-shadow: 0 0 5px 1px #3C3C3C;
 }
 .btn--login {
+  font-family: "Open Sans", sans-serif;
   border: none;
   padding: 13px 15px;
   color: black;
@@ -604,6 +609,10 @@ a {
 }
 .homeNav li:hover {
   border: 1px solid grey;
+}
+.homeNav span {
+  font-size: 1.4rem;
+  padding: 27px;
 }
 
 .homeScreen {
@@ -960,6 +969,7 @@ a {
   text-align: center;
   font-size: 4rem;
   letter-spacing: -0.8px;
+  line-height: 5.5rem;
 }
 .login__wrapper {
   margin: 0 auto;

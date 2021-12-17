@@ -4,14 +4,15 @@ import {Link} from 'react-router-dom';
 import Decoration from "../Decoration";
 
 
-const Header = () => {
+const Header = ({loggedIn}) => {
+
     return (
         <section className="homeHeader" id="header">
             <div className="homeHeader__wrapper">
                 <div className="homeHeader__background"/>
 
                 <div className="homeHeader__body">
-                    <Nav/>
+                    <Nav loggedIn={loggedIn}/>
                     <div className="homeHeader__content">
                         <h1>
                             Zacznij pomagac!<br/>

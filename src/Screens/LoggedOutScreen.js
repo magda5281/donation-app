@@ -4,6 +4,7 @@ import Decoration from "../components/Decoration";
 import {Link} from "react-router-dom";
 
 const LoggedOutScreen = () => {
+
     return (
         <section className="login">
             <Nav/>
