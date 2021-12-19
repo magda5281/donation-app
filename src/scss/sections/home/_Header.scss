@@ -3,15 +3,17 @@
   &__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 963px;
   }
 
-  &__body{
-    padding-left: 66px;
-  }
+  //&__body{
+  //  padding-left: 66px;
+  //}
 
   &__content{
     margin: 0 auto;
+    padding-right: 170px;
     h1 {
       font-size: 3.8rem;
       text-align: center;

@@ -539,13 +539,12 @@ a {
 .homeHeader__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 963px;
-}
-.homeHeader__body {
-  padding-left: 66px;
 }
 .homeHeader__content {
   margin: 0 auto;
+  padding-right: 170px;
 }
 .homeHeader__content h1 {
   font-size: 3.8rem;
@@ -993,6 +992,58 @@ a {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 300;
+}
+
+.oddajRzeczyScreen__background {
+  background-image: url("../../assets/Form-Hero-Image.jpg");
+}
+.oddajRzeczyScreen__wrapper {
+  height: 853px;
+}
+.oddajRzeczyScreen__Nav {
+  margin-bottom: 135px;
+}
+.oddajRzeczyScreen h2 {
+  font-size: 3.8rem;
+  letter-spacing: -0.76px;
+  line-height: 5.4rem;
+  text-align: center;
+}
+.oddajRzeczyScreen p {
+  font-size: 4rem;
+  line-height: 5.5rem;
+  font-weight: 300;
+}
+.oddajRzeczyScreen__steps {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.oddajRzeczyScreen__step {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 0.75px solid #3C3C3C;
+  height: 135px;
+  width: 135px;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  transform: rotate(45deg);
+}
+.oddajRzeczyScreen__step div > div:nth-child(1) {
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+}
+.oddajRzeczyScreen__text {
+  transform: rotate(-45deg);
+}
+.oddajRzeczyScreen__text div:nth-child(1) {
+  padding-bottom: 10px;
+}
+.oddajRzeczyScreen__text div:nth-child(2) {
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

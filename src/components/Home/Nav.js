@@ -7,7 +7,7 @@ const Nav = ({loggedIn}) => {
     console.log(loggedIn);
 
     return (
-        <section className="homeNav">
+        <section className="homeNav oddajRzeczyScreen__Nav">
 
             {loggedIn ? <div className="homeNav__upper">
                 <span>Czesc {loggedIn}</span>
