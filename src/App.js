@@ -8,7 +8,7 @@ import HomeScreen from "./Screens/HomeScreen";
 import RegisterScreen from "./Screens/RegisterScreen";
 import LoginScreen from "./Screens/LoginScreen";
 import LoggedOutScreen from "./Screens/LoggedOutScreen";
-import OddajRzeczyScreen from "./Screens/OddajRzeczyScreen";
+import DonationScreen from "./Screens/DonationScreen";
 import {useEffect, useState} from "react";
 import {auth} from "./firebase";
 
@@ -36,7 +36,7 @@ function App() {
           <Route exact path={"/register"} element={<RegisterScreen/>}/>
           <Route exact path ={"/login"} element={<LoginScreen/>}/>
           <Route exact path ={"/loggedOut"} element={<LoggedOutScreen/>}/>
-          <Route exact path = {"/oddajRzeczy"} element = {<OddajRzeczyScreen loggedIn={loggedIn}/>}/>
+          <Route exact path = {"/donate"} element = {<DonationScreen loggedIn={loggedIn}/>}/>
         </Routes>
       </Router>
     </div>

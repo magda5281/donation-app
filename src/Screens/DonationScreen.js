@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 import Nav from "../components/Home/Nav";
 import Decoration from "../components/Decoration";
+import DonationForm from "../components/DonationForm/DonationForm";
+import ContactUs from "../components/Home/ContactUs";
 
-const OddajRzeczyScreen = ({loggedIn}) => {
+const DonationScreen = ({loggedIn}) => {
+
     return (
-        <section className="homeHeader oddajRzeczyScreen" id="header">
-            <div className="homeHeader__wrapper oddajRzeczyScreen__wrapper">
-                <div className="homeHeader__background oddajRzeczyScreen__background"/>
+        <section className="homeHeader donationScreen" id="header">
+            <div className="homeHeader__wrapper donationScreen__wrapper">
+                <div className="homeHeader__background donationScreen__background"/>
                 <div className="homeHeader__body">
                     <Nav loggedIn={loggedIn}/>
                     <div className="homeHeader__content">
@@ -16,38 +19,39 @@ const OddajRzeczyScreen = ({loggedIn}) => {
                         </h2>
                         <Decoration marginTop="25px" marginBottom="20px"/>
                         <p>Wystarcza cztery proste kroki:</p>
-                        <div className="oddajRzeczyScreen__steps">
-                            <div className="oddajRzeczyScreen__step">
-                                <div className="oddajRzeczyScreen__text">
+                        <div className="donationScreen__steps">
+                            <div className="donationScreen__step">
+                                <div className="donationScreen__text">
                                     <div>1</div>
                                     <div>Wybierz <br/>rzeczy</div>
                                 </div>
                             </div>
-                            <div className="oddajRzeczyScreen__step">
-                                <div className="oddajRzeczyScreen__text">
+                            <div className="donationScreen__step">
+                                <div className="donationScreen__text">
                                     <div>2</div>
                                     <div>Spakuj<br/>worki</div>
                                 </div>
                             </div>
-                            <div className="oddajRzeczyScreen__step">
-                                <div className="oddajRzeczyScreen__text">
+                            <div className="donationScreen__step">
+                                <div className="donationScreen__text">
                                     <div>3</div>
                                     <div>Wybierz <br/>fundacje</div>
                                 </div>
                             </div>
-                            <div className="oddajRzeczyScreen__step">
-                                <div className="oddajRzeczyScreen__text">
+                            <div className="donationScreen__step">
+                                <div className="donationScreen__text">
                                     <div>4</div>
                                     <div>Zamow<br/>kuriera</div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+            <DonationForm/>
+            <ContactUs/>
         </section>
     );
 };
 
-export default OddajRzeczyScreen;
+export default DonationScreen;

@@ -1,0 +1,119 @@
+.donationForm {
+  padding-bottom: 30px;
+
+  &__important {
+    padding: 50px 0 50px 142px;
+    background-color: $color-detail;
+
+    & h2 {
+      font-size: 3.6rem;
+      font-weight: 600;
+      line-height: 4.9rem;
+      text-align: left;
+    }
+
+    & p {
+      font-size: 2.2rem;
+      text-align: left;
+      line-height: 3rem;
+    }
+  }
+
+  &__body {
+    background-image: url("../../../assets/Background-Form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: 125px;
+    height: 1110px;
+  }
+
+  &--backgroundPosition {
+    background-position-y: 0;
+    height: 850px;
+  }
+
+  &__container {
+    padding: 35px 0 35px 142px;
+
+    p {
+      font-size: 2.4rem;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 3.6rem;
+      font-weight: 600;
+      text-align: left;
+      line-height: 4.9rem;
+    }
+  }
+
+  &__stepSix {
+    width: 50%;
+    padding-top: 15%;
+
+  }
+
+  &__thankYouNote {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 5.5rem;
+    letter-spacing: -0.8px;
+  }
+
+  &__checkboxField {
+    margin: 40px 0 40px 0;
+    display: flex;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+    }
+
+    label {
+      font-size: 2.4rem;
+      font-weight: 300;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+    }
+
+    span {
+      height: 40px;
+      flex-basis: 40px;
+      border: 0.75px solid $color-base;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    input:checked + span {
+      background-color: $color-detail;
+    }
+  }
+
+  &__buttons {
+
+    padding-left: 142px;
+  }
+
+  button {
+    font-size: 2.4rem;
+    font-weight: 300;
+    padding: 23px 53px;
+    border: 0.75px solid $color-base;
+    background-color: #EEEDEB;
+  }
+
+  .btn--left {
+    margin-right: 50px;
+  }
+}

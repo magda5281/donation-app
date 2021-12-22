@@ -994,32 +994,32 @@ a {
   font-weight: 300;
 }
 
-.oddajRzeczyScreen__background {
+.donationScreen__background {
   background-image: url("../../assets/Form-Hero-Image.jpg");
 }
-.oddajRzeczyScreen__wrapper {
+.donationScreen__wrapper {
   height: 853px;
 }
-.oddajRzeczyScreen__Nav {
+.donationScreen__Nav {
   margin-bottom: 135px;
 }
-.oddajRzeczyScreen h2 {
+.donationScreen h2 {
   font-size: 3.8rem;
   letter-spacing: -0.76px;
   line-height: 5.4rem;
   text-align: center;
 }
-.oddajRzeczyScreen p {
+.donationScreen p {
   font-size: 4rem;
   line-height: 5.5rem;
   font-weight: 300;
 }
-.oddajRzeczyScreen__steps {
+.donationScreen__steps {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-.oddajRzeczyScreen__step {
+.donationScreen__step {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -1032,18 +1032,117 @@ a {
   text-align: center;
   transform: rotate(45deg);
 }
-.oddajRzeczyScreen__step div > div:nth-child(1) {
+.donationScreen__step div > div:nth-child(1) {
   font-size: 3.2rem;
   line-height: 4.3rem;
 }
-.oddajRzeczyScreen__text {
+.donationScreen__text {
   transform: rotate(-45deg);
 }
-.oddajRzeczyScreen__text div:nth-child(1) {
+.donationScreen__text div:nth-child(1) {
   padding-bottom: 10px;
 }
-.oddajRzeczyScreen__text div:nth-child(2) {
+.donationScreen__text div:nth-child(2) {
   padding-bottom: 40px;
+}
+
+.donationForm {
+  padding-bottom: 30px;
+}
+.donationForm__important {
+  padding: 50px 0 50px 142px;
+  background-color: #FAD648;
+}
+.donationForm__important h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.9rem;
+  text-align: left;
+}
+.donationForm__important p {
+  font-size: 2.2rem;
+  text-align: left;
+  line-height: 3rem;
+}
+.donationForm__body {
+  background-image: url("../../../assets/Background-Form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: 125px;
+  height: 1110px;
+}
+.donationForm--backgroundPosition {
+  background-position-y: 0;
+  height: 850px;
+}
+.donationForm__container {
+  padding: 35px 0 35px 142px;
+}
+.donationForm__container p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.donationForm__container h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: left;
+  line-height: 4.9rem;
+}
+.donationForm__stepSix {
+  width: 50%;
+  padding-top: 15%;
+}
+.donationForm__thankYouNote {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 5.5rem;
+  letter-spacing: -0.8px;
+}
+.donationForm__checkboxField {
+  margin: 40px 0 40px 0;
+  display: flex;
+}
+.donationForm__checkboxField input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.donationForm__checkboxField label {
+  font-size: 2.4rem;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.donationForm__checkboxField span {
+  height: 40px;
+  flex-basis: 40px;
+  border: 0.75px solid #3C3C3C;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.donationForm__checkboxField input:checked + span {
+  background-color: #FAD648;
+}
+.donationForm__buttons {
+  padding-left: 142px;
+}
+.donationForm button {
+  font-size: 2.4rem;
+  font-weight: 300;
+  padding: 23px 53px;
+  border: 0.75px solid #3C3C3C;
+  background-color: #EEEDEB;
+}
+.donationForm .btn--left {
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

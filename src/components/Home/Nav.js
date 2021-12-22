@@ -1,17 +1,16 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import {Link as Scroller}  from 'react-scroll'
 import {auth} from "../../firebase";
 
 const Nav = ({loggedIn}) => {
-    console.log(loggedIn);
 
     return (
-        <section className="homeNav oddajRzeczyScreen__Nav">
+        <section className="homeNav donationScreen__Nav">
 
             {loggedIn ? <div className="homeNav__upper">
                 <span>Czesc {loggedIn}</span>
-                <Link to="/oddajRzeczy">
+                <Link to="/donate">
                     <button className="homeNav__upper__log">
                         Oddaj rzeczy
                     </button>

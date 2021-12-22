@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <small>
-                Copyright by M Gozdalik
+                Copyright by Coders Lab; Coded by Magda Gozdalik
             </small>
             <div className="footer__icons">
                 <img src={facebook} alt={"Facebook icon"}/>
