@@ -10,7 +10,7 @@ const DonationScreen = ({loggedIn}) => {
         <section className="homeHeader donationScreen" id="header">
             <div className="homeHeader__wrapper donationScreen__wrapper">
                 <div className="homeHeader__background donationScreen__background"/>
-                <div className="homeHeader__body">
+                <div className="homeHeader__body donationScreen__body">
                     <Nav loggedIn={loggedIn}/>
                     <div className="homeHeader__content">
                         <h2>

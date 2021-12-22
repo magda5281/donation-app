@@ -1,14 +1,20 @@
 .donationScreen {
+  padding-right: 0;
   &__background {
     background-image: url("../../assets/Form-Hero-Image.jpg");
   }
 
   &__wrapper {
     height: 853px;
+
   }
 
   &__Nav {
     margin-bottom: 135px;
+  }
+
+  &__body{
+    padding-right: 140px;
   }
 
   h2 {
@@ -33,7 +39,6 @@
   &__step {
     display: flex;
     justify-content: space-around;
-    //align-items: center;
     flex-direction: column;
     border: 0.75px solid $color-base;
     height: 135px;
@@ -54,7 +59,6 @@
 
   &__text {
     transform: rotate(-45deg);
-    //padding: 10px;
 
     & div:nth-child(1) {
       padding-bottom: 10px;

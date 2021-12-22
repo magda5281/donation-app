@@ -532,6 +532,9 @@ a {
   text-align: left;
   padding-top: 5px;
 }
+.error--donationForm {
+  font-size: 2.4rem;
+}
 
 .homeHeader {
   padding-right: 140px;
@@ -994,6 +997,9 @@ a {
   font-weight: 300;
 }
 
+.donationScreen {
+  padding-right: 0;
+}
 .donationScreen__background {
   background-image: url("../../assets/Form-Hero-Image.jpg");
 }
@@ -1002,6 +1008,9 @@ a {
 }
 .donationScreen__Nav {
   margin-bottom: 135px;
+}
+.donationScreen__body {
+  padding-right: 140px;
 }
 .donationScreen h2 {
   font-size: 3.8rem;
@@ -1090,6 +1099,7 @@ a {
   font-weight: 600;
   text-align: left;
   line-height: 4.9rem;
+  margin-top: 20px;
 }
 .donationForm__stepSix {
   width: 50%;

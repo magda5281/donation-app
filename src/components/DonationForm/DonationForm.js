@@ -8,15 +8,15 @@ import StepSix from "./StepSix";
 
 const DonationForm = () => {
     const [step, setStep] = useState(1);
+    const [error, setError] = useState("");
 
     const [items, setItems] = useState({
-        clothes: false,
+        goodQualityClothes: false,
         wornClothes: false,
         toys: false,
         books: false,
         others: false,
     });
-
 
     //     quantity: 0,
     //     location: "",
@@ -35,22 +35,25 @@ const DonationForm = () => {
     //     }
     // });
 
-    // const updateData = ({type, newData}) => {
-    //     setData((data) => {
-    //         return {...data, [type]: newData}
-    //     })
-    //
+
+
+
+    // const handleNextClick = (e, error) => {
+    //     // if (step === 6) {
+    //     //     return
+    //     // }
+    //     e.preventDefault()
+    //     setStep(step => step + 1);
     // }
-
-
-    const goNextstep = (e) => {
-        // if (step === 6) {
-        //     return
-        // }
+    const handleNextStep = (e) => {
         e.preventDefault()
+                if(!Object.values(items).includes(true)){
+                    setError(["Wybierz przynajmniej jedną rzecz do oddania."])
+                } else {
+                setStep((step) => step + 1);
+            }
+    };
 
-        setStep(step => step + 1);
-    }
 
     const goPreviousStep = (e) => {
         e.preventDefault()
@@ -69,18 +72,19 @@ const DonationForm = () => {
             <form onSubmit={handleSubmit} className={`donationForm__body ${(step === 5 || step === 6) ?
                 "donationForm--backgroundPosition" : null}`}
             >
-                {step === 1 && <StepOne/>}
+                {step === 1 && <StepOne items={items} setItems={setItems} error={error}/>}
                 {step === 2 && <StepTwo/>}
                 {step === 3 && <StepThree/>}
                 {step === 4 && <StepFour/>}
                 {step === 5 && <StepFive/>}
                 {step === 6 && <StepSix/>}
 
+
                 <div className="donationForm__buttons">
                     {step === 5 && <button type="submit" className="btn btn--left"> Potwierdzam</button>}
                     {step !== 6 && step !== 1 &&
                     <button className="btn btn--left" onClick={goPreviousStep}>Wstecz</button>}
-                    {step !== 6 && step !== 5 && <button className="btn" onClick={goNextstep}> Dalej</button>}
+                    {step !== 6 && step !== 5 && <button className="btn" onClick={handleNextStep}> Dalej</button>}
                 </div>
             </form>
 
