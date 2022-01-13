@@ -4,12 +4,13 @@ import "firebase/compat/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAS-NPz-2TR2KoZsnfhx_pL2VU00UBOyWE",
-    authDomain: "donation-app-aa920.firebaseapp.com",
-    projectId: "donation-app-aa920",
-    storageBucket: "donation-app-aa920.appspot.com",
-    messagingSenderId: "72584724639",
-    appId: "1:72584724639:web:97bef84e36cfdcfaa022aa"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
+
 };
 
 // Initialize Firebase
