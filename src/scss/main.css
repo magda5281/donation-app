@@ -1059,6 +1059,7 @@ a {
   padding-bottom: 30px;
 }
 .donationForm__important {
+  height: 179px;
   padding: 50px 0 50px 142px;
   background-color: #FAD648;
 }
@@ -1083,10 +1084,11 @@ a {
 }
 .donationForm--backgroundPosition {
   background-position-y: 0;
-  height: 850px;
+  height: 900px;
 }
 .donationForm__container {
   padding: 35px 0 35px 142px;
+  height: 800px;
 }
 .donationForm__container p {
   font-size: 2.4rem;
@@ -1100,6 +1102,9 @@ a {
   text-align: left;
   line-height: 4.9rem;
   margin-top: 20px;
+}
+.donationForm--stepFive {
+  height: 750px;
 }
 .donationForm__stepSix {
   width: 50%;

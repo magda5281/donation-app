@@ -2,6 +2,7 @@
   padding-bottom: 30px;
 
   &__important {
+    height: 179px;
     padding: 50px 0 50px 142px;
     background-color: $color-detail;
 
@@ -30,11 +31,12 @@
 
   &--backgroundPosition {
     background-position-y: 0;
-    height: 850px;
+    height: 900px;
   }
 
   &__container {
     padding: 35px 0 35px 142px;
+    height: 800px;
 
     p {
       font-size: 2.4rem;
@@ -50,6 +52,10 @@
       line-height: 4.9rem;
       margin-top: 20px;
     }
+  }
+
+  &--stepFive{
+    height: 750px;
   }
 
   &__stepSix {
