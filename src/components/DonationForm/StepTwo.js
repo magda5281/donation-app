@@ -26,14 +26,14 @@ const StepTwo = () => {
                 <div className="form-group">
                     <label className="select">
                         <span>Liczba 60l worków:</span>
-                        <Select
-                            className="select-input"
-                            // placeholder={bags ? bags : "- wybierz -"}
-                            options={options}
-                            defaultValue="bags"
-                            // value={bags ? options[bags - 1] : false}
-                            // onSelectChange={(e) => setBags(e.value)}
-                        />
+                        {/*<Select*/}
+                        {/*    className="select-input"*/}
+                        {/*    // placeholder={bags ? bags : "- wybierz -"}*/}
+                        {/*    options={options}*/}
+                        {/*    defaultValue="bags"*/}
+                        {/*    // value={bags ? options[bags - 1] : false}*/}
+                        {/*    // onSelectChange={(e) => setBags(e.value)}*/}
+                        {/*/>*/}
                     </label>
                 </div>
             </div>
