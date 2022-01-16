@@ -21,7 +21,6 @@ const LoginScreen = () => {
         if (!regex.test(user.email) || (user.email==="")) {
             setEmailError(true);
             setUser({...user, "email": ""})
-            console.log("invalid email")
             return false
         } else {
             setEmailError(false);
@@ -29,22 +28,18 @@ const LoginScreen = () => {
         if (user.password.length < 6 || (user.password==="")) {
             setPasswordError(true);
             setUser({...user, "password":""})
-            console.log("invalid password")
             return false
         } else {
             setEmailError(false);
             setPasswordError(false);
-            console.log("submitted");
             auth.signInWithEmailAndPassword(
                 user.email,
                 user.password
             )
                 .then((authUser)=>{
-                    console.log(authUser.user.uid);
                     navigate("/", { replace: true });
                 })
                 .catch((error)=>{
-                    console.log(error.message);
                     setAuthError(true);
                 })
         }

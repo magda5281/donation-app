@@ -12,7 +12,7 @@ const RegisterScreen = () => {
     const [authError, setAuthError] = useState(false);
     const navigate = useNavigate();
 
-console.log(user, formError, authError);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormError(null);
@@ -40,17 +40,14 @@ console.log(user, formError, authError);
             }
             setFormError(error);
         } else {
-            console.log("submitted")
             auth.createUserWithEmailAndPassword(
                 user.email,
                 user.password
             )
                 .then((authUser) => {
-                    console.log(authUser.user.uid);
                     navigate("/");
                 })
                 .catch((error) => {
-                    console.log(error.message);
                     setAuthError(true);
                     setUser({email: "", password: "", password2: ""});
                 });

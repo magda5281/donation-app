@@ -1,17 +1,17 @@
 import React from 'react';
 
 import DonationFormMessage from "./DonationFormMessage";
-import Select from "./Select";
+// import Select from "./Select";
 
 const StepTwo = () => {
 
-    const options = [
-        { value: 1, label: "1" },
-        { value: 2, label: "2" },
-        { value: 3, label: "3" },
-        { value: 4, label: "4" },
-        { value: 5, label: "5" },
-    ];
+    // const options = [
+    //     { value: 1, label: "1" },
+    //     { value: 2, label: "2" },
+    //     { value: 3, label: "3" },
+    //     { value: 4, label: "4" },
+    //     { value: 5, label: "5" },
+    // ];
 
     return (
         <section className="donationForm__step">
