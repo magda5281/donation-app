@@ -1,25 +1,28 @@
 .homeHeader {
-  padding-right: 140px;
+
   &__wrapper {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    height: 963px;
+    height: 100vh;
+    @include tablet{
+       display: flex;
+    flex-direction: row;
+    }
   }
 
-  //&__body{
-  //  padding-left: 66px;
-  //}
+  &__body{
+    display: flex;
+    flex-direction: column;
+
+  }
 
   &__content{
     margin: 0 auto;
-    padding-right: 170px;
-    h1 {
-      font-size: 3.8rem;
-      text-align: center;
-      letter-spacing: -0.76px;
-      line-height: 4.5rem;
-
+    padding: 0 1em;
+    @include tablet {
+      padding: 5em 2em 0 2em ;
+    }
+    @include desktop {
+      padding: 7em 7em 0 0;
     }
   }
 
@@ -28,13 +31,24 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    // width: 50%;
+    height: 30%;
+    @include tablet {
+      width: 50%;
+      height: 100%;
+    }
   }
 
   &__buttons{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    margin-top: 2em;
+  a + a {
+    margin-left: 0.5em;
   }
+  }
+
+  
+  
 
 }

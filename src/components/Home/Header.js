@@ -10,7 +10,6 @@ const Header = ({loggedIn}) => {
         <section className="homeHeader" id="header">
             <div className="homeHeader__wrapper">
                 <div className="homeHeader__background"/>
-
                 <div className="homeHeader__body">
                     <Nav loggedIn={loggedIn}/>
                     <div className="homeHeader__content">
@@ -18,7 +17,7 @@ const Header = ({loggedIn}) => {
                             Zacznij pomagac!<br/>
                             Oddaj niechciane rzeczy w zaufane rece
                         </h1>
-                        <Decoration marginTop="25px" marginBottom="65px"/>
+                        <Decoration />
                         <div className="homeHeader__buttons">
                             <Link to="/login">
                                 <button className="btn btn--large">ODDAJ <br/>RZECZY</button>

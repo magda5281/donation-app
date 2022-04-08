@@ -1,32 +1,40 @@
 .homeFourSteps {
-  padding-top: 55px;
-  padding-bottom: 80px;
+  padding-top: 4em;
+  padding-bottom: 1em;
   margin: 0 auto;
 
-  h2 {
-    text-align: center;
-    font-size: 3.8rem;
-    letter-spacing: -0.76px;
-  }
-
   &__body {
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 400px 60px 400px;
+
     background-color: $color-background-secondary;
-    margin-bottom: 35px;
-    @include desktop {
-      padding: 70px 200px 60px 200px;
+    margin-bottom: 1em;
+    padding: 1em;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktopSm {
+      padding: 2em 10em;
     }
   }
 
   &__column {
     text-align: center;
-    padding: 0 50px;
+    margin-bottom: 2em;
     border:none;
-    @include desktop {
-      padding: 0 30px;
+
+    @include tablet {
+      padding:1.5em;
+      
     }
+
+      @include desktopSm{
+      padding: 3em 1.5em;
+      flex-wrap: nowrap;
+      flex:.25;
+    }
+
   }
 
   h4 {

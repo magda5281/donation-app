@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import {Link as Scroller}  from 'react-scroll'
+import { Link as Scroller } from 'react-scroll';
 import {auth} from "../../firebase";
 
 const Nav = ({loggedIn}) => {
 
+    const [isActive, setActive] = useState(false);
+
+    const toggleOpenNav = () => {
+    setActive(!isActive)
+    }
+    
     return (
         <section className="homeNav donationScreen__Nav">
 
@@ -34,17 +40,26 @@ const Nav = ({loggedIn}) => {
                 </Link>
             </div>
             }
-            <div className="homeNav__lower">
-                <ul>
-                    <Link to={"/"}>
-                        <li className="homeNav__tabs">Start</li>
-                    </Link>
+            <nav className='homeNav__lower'>
+                <button
+                    className={`homeNav__toggle ${isActive && 'homeNav__open'}` }
+                    onClick={toggleOpenNav}
+                >
+                    <span className='homeNav__bar'></span>
+                    <span className='homeNav__bar'></span>
+                    <span className='homeNav__bar'></span>
+        </button>
+
+                <ul className={`homeNav__list ${isActive && "homeNav__open" }`}>
+                    <li className="homeNav__tabs"><Link to={"/"}>
+                        Start
+                    </Link></li>
                     <li className="homeNav__tabs"><Scroller activeClass="active" to="fourSteps" spy={true} smooth={true}>O co chodzi?</Scroller></li>
                     <li className="homeNav__tabs"><Scroller  activeClass="active" to="aboutUs" spy={true} smooth={true}>O nas</Scroller></li>
                     <li className="homeNav__tabs"><Scroller  activeClass="active" to="organizations" spy={true} smooth={true}>Fundacja i organizacje</Scroller></li>
                     <li className="homeNav__tabs"><Scroller  activeClass="active" to="contactUs" spy={true} smooth={true}>Kontakt</Scroller></li>
                 </ul>
-            </div>
+            </nav>
         </section>
     );
 };

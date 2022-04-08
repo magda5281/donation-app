@@ -11,10 +11,11 @@
   &--large {
     font-family: $font-base;
     text-transform: uppercase;
-    font-weight: 300;
-    width: 300px;
-    height: 120px;
-    font-size: 3.6rem;
+    font-weight: 400;
+    width: 7em;
+    height: 3em;
+    font-size: clamp(1.8rem, 3.5vw,3.6rem  );
+    
     @include desktop {
       width: 260px;
     }
@@ -23,16 +24,16 @@
   &--medium {
     font-family: $font-base;
     font-weight: 400;
-    width: 208px;
+    width: 5em;
     font-size: 2.4rem;
   }
 
   &--small {
     font-family: $font-base;
     font-weight: 300;
-    padding: 13px 52px;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
+    padding: 0.5em 2em;
+    font-size: clump(1.2rem, 3vw, 1.8rem);
+  
     color: black;
     transition: ease-in-out 0.3s;
     &:hover {

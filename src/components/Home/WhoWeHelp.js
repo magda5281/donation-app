@@ -6,13 +6,17 @@ import fundationsList from "../../data/fundationsList";
 import localList from "../../data/local";
 import Decoration from "../Decoration";
 
+// to do: create data base storage on firebase for data
+//pull that data from firebase db 
+
 const WhoWeHelp = () => {
 
     return (
         <section className="whoWeHelp" id="organizations">
+            <div className='container--medium'>
             <h2>Komu pomagamy?</h2>
             <Decoration marginTop="25px" marginBottom="25px"/>
-            <Tabs style={{minHeight: 1025}}>
+            <Tabs className='whoWeHelp__Tabs'>
                 <TabList className="whoWeHelp__tabList">
                     <Tab className="whoWeHelp__tab" >Fundacjom</Tab>
                     <Tab className="whoWeHelp__tab">Organizacjom <br/>pozarzadowym</Tab>
@@ -33,14 +37,14 @@ const WhoWeHelp = () => {
                     <PaginatedItems itemsPerPage={3} items={organizationsList}/>
 
                 </TabPanel>
-
                 <TabPanel className="whoWeHelp__tabPanel">
                         <p className="whoWeHelp__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aspernatur, aut dicta ducimus eum, fugiat in placeat quod temporibus velit voluptas voluptatum?
                         </p>
                     <PaginatedItems itemsPerPage={3} items={localList}/>
                 </TabPanel>
-            </Tabs>
+                </Tabs>
+                </div>
         </section>
 )
 };

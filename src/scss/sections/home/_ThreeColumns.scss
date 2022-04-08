@@ -6,38 +6,46 @@
     width: 100%;
 
   &__wrapper{
-    display: flex;
-    justify-content: space-around;
-    padding: 46px 163px 86px;
+    padding: 1em;
+    @include tablet{
+      display: flex;
+      justify-content: space-around;
+      // padding: 3em 2em;
+        padding:clamp(3.6em, 4vw, 4em ) ;
+    }
+  
     @include desktop {
-      padding: 46px 100px 86px;
+      padding: 4.6em 10em 8.6em;
     }
   }
   &__column {
     text-align: center;
-
+padding: 1em;
+@include tablet{
+  padding: 0 2em;
+}
   }
 
   &__number{
-    font-size: 9rem;
+    font-size: clamp(5rem, 8vw, 9rem);
     color: $color-alt;
     font-weight: 300;
-    padding: 10px 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
+    
   }
   &__title{
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
     text-transform: uppercase;
     letter-spacing: -0.36px;
-    margin-bottom: 28px;
+    margin-bottom: 1em;
   }
   &__text {
     font-family: $font-alt;
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     letter-spacing: -0.32px;
     font-weight: 300;
     line-height: 2.1rem;
-    padding: 0 100px;
+    // padding: 0 100px;
 
     @include desktop {
       padding: 0 25px;

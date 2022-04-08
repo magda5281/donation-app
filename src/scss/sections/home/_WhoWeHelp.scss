@@ -1,62 +1,74 @@
 
 .whoWeHelp {
-  padding: 70px 278px 80px;
-  margin: 0 auto;
-  @include desktop {
-    padding: 70px 100px 80px;
-  }
 
-  h2 {
-    text-align: center;
-    font-size:3.8rem;
-    letter-spacing: -0.76px;
-    margin-bottom: 25px;
-
+  padding:  1em;
+ 
+&__Tabs{
+padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include tablet{
+      padding: 2em;
   }
+}
+ 
   &__tabList {
     align-items: center;
     justify-content: space-between;
     display: flex;
-    padding: 50px 320px 70px 270px;
-    @include desktop {
-      padding: 50px 170px 70px 170px;
-    }
+    margin: 2em auto;
+  @include phoneSm {
+  flex-direction: column;
+  margin-bottom: 1em;
+}
   }
   &__tab{
     display: flex;
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
     text-align: center;
-    padding: 23px 42px;
+    padding: 0 1em ;
     cursor: pointer;
-    height: 106px;
+    height: 3em;
     align-items: center;
     justify-content: center;
+    border:  0.75px solid transparent;
 
     &:hover{
       border:  0.75px solid $color-base;
     }
 
+    @include phoneSm {
+ 
+    margin-bottom: 1em;
+}
+
   }
 
 
   &__text {
-    margin-bottom: 66px;
-    padding: 0 352px;
+    margin: 1em auto ;
     text-align: center;
-    font-size: 2.2rem;
-    line-height: 3.1rem;
-    @include desktop {
-      padding: 0 220px;
-
-    }
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
+    line-height: clamp(1.6rem, 3.5vw, 2.6rem);
+    width:min(75%, 600px)
+  
   }
 
   &__tabPanel{
-    transition: 0.66s ease-out;
-
-
-  ;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
   }
+
+  .container--medium{
+  margin: 0 auto;
+ @include desktopSm{
+   
+  max-width: 1000px;
+ }
+}
 
 }

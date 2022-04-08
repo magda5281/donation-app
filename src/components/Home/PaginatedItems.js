@@ -12,7 +12,7 @@ function Items({currentItems}) {
                         <h3>Fundacja "{item.name}"</h3>
                         <p>Cel i misja: {item.goal}</p>
                     </div>
-                    <p>{item.donations}</p>
+                    <p className='items__donations'>{item.donations}</p>
                 </div>
 
             ))}
@@ -50,11 +50,11 @@ function PaginatedItems({itemsPerPage, items}) {
             <Items currentItems={currentItems}/>
             <ReactPaginate
                 breakLabel="..."
-                nextLabel="next >"
+                // nextLabel="next >"
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={3}
+                pageRangeDisplayed={3} 
                 pageCount={pageCount}
-                previousLabel="< previous"
+                // previousLabel="< previous"
                 renderOnZeroPageCount={null}
                 previousClassName={"pagination__previous"}
                 nextClassName={"pagination__next"}

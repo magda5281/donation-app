@@ -1,0 +1,11 @@
+.decoration{
+ display: flex;
+ justify-content: center;
+
+ img{
+  @include phoneSm{
+  width: 80%;
+ }
+ }
+ 
+}
