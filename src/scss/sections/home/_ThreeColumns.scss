@@ -4,18 +4,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+  
 
   &__wrapper{
-    padding: 1em;
     @include tablet{
       display: flex;
       justify-content: space-around;
-      // padding: 3em 2em;
-        padding:clamp(3.6em, 4vw, 4em ) ;
+        padding:clamp(3.6em, 4vw, 4em);
     }
   
     @include desktop {
-      padding: 4.6em 10em 8.6em;
+      padding: clamp(4.6em, 10em, 8.6em);
     }
   }
   &__column {

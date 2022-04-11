@@ -2,23 +2,24 @@
 
   &__wrapper {
     justify-content: space-between;
-    height: 100vh;
+    height: 70vh;
 
     @include tablet{
        display: flex;
-    flex-direction: row;
+      flex-direction: row;
+      height: 100vh;
     }
   }
 
   &__body{
     display: flex;
     flex-direction: column;
+    padding: 0 1em;
 
   }
 
   &__content{
     margin: 0 auto;
-    padding: 0 1em;
     @include tablet {
       padding: 5em 2em 0 2em ;
     }
@@ -43,7 +44,7 @@
   &__buttons{
     display: flex;
     justify-content: space-around;
-    margin-top: 2em;
+    margin-top: 4em;
   a + a {
     margin-left: 0.5em;
   }

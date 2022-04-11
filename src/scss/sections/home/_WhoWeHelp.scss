@@ -20,7 +20,7 @@ padding: 0 1em;
     margin: 2em auto;
   @include phoneSm {
   flex-direction: column;
-  margin-bottom: 1em;
+  margin:0;
 }
   }
   &__tab{
@@ -39,8 +39,12 @@ padding: 0 1em;
     }
 
     @include phoneSm {
- 
-    margin-bottom: 1em;
+      &:hover{
+        border:  none;
+        width: 100%;
+        background-color: $color-underlines;
+      }
+    
 }
 
   }
@@ -51,7 +55,7 @@ padding: 0 1em;
     text-align: center;
     font-size: clamp(1.2rem, 3vw, 2.2rem);
     line-height: clamp(1.6rem, 3.5vw, 2.6rem);
-    width:min(75%, 600px)
+    width:min(90%, 600px)
   
   }
 

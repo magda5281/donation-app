@@ -9,10 +9,10 @@ function Items({currentItems}) {
             currentItems.map((item) => (
                 <div key = {item.key} className="items">
                     <div>
-                        <h3>Fundacja "{item.name}"</h3>
-                        <p>Cel i misja: {item.goal}</p>
+                        <h3>Fundation "{item.name}"</h3>
+                        <p>Goal &amp; Mission: {item.goal}</p>
                     </div>
-                    <p className='items__donations'>{item.donations}</p>
+                    <p className='items__donations'>Donations: {item.donations}</p>
                 </div>
 
             ))}

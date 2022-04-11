@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Footer from "../Footer";
 
 import Form from "./Form";
@@ -14,11 +15,12 @@ const ContactUs = () => {
                         <h2>
                             Skontaktuj sie z nami
                         </h2>
-                        <Decoration marginTop="25px" marginBottom="30px"/>
+                        <Decoration />
                         <Form/>
                 </div>
 
             </div>
+
             <Footer/>
         </section>
     );

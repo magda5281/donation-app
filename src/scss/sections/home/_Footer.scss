@@ -4,13 +4,15 @@
   justify-content: center;
   position: absolute;
   width: 100%;
-  bottom: 1em;
-  margin-top: 1em;
+  bottom: 0;
+
+  padding: .5em;
 
   @include tablet{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1em;
   }
 
   small {
@@ -25,13 +27,23 @@
   &__icons {
   
 display: flex;
-justify-content: center;
-    img:first-child {
-      margin-right: 1em;
-    }
-
-    @include tablet{
-      margin-right: 1em;
-    }
+align-items: center;
+justify-content: space-around;
+    // img:first-child {
+    //   margin-right: 1em;
+    // }
+div{
+  font-size: 1rem;
+  color:$color-base;
+  cursor: pointer;
+  &:hover{
+    background-color:lightgray;
+    box-shadow: 0 0 5px 5px lightgray;
+    opacity: 0.6;
+  }
+}
+    // @include tablet{
+    //   margin-right: 1em;
+    // }
   }
 }

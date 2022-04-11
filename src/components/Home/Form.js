@@ -116,9 +116,9 @@ const Form = () => {
       </div>
       <div className="form__control">
         <label htmlFor="message">Wpisz wiadomosc</label>
-        <textarea rows="5"
-          placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          minLength="120"
+        <textarea rows="4"
+          placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  ."
+          minLength="12"
           name='message'
           value={ message }
           onChange={ handleInput }
